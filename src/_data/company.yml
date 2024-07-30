@@ -1,0 +1,24 @@
+####################
+# CONFIG
+####################
+name: BHInternet
+
+phone: 01 85 53 74 38
+tel: 0185537438
+
+email: loic.seisen@klimat.fr
+
+address: 11 Route de Leuville 91310 Linas
+
+websiteAddr: 
+website: 205
+
+recaptcha:
+  client: 6Lfn5-onAAAAAPr2clRUrAqMXp31ie6qOo0QYo8J
+  server: 6Lfn5-onAAAAACBS2_qfhIvm0DxXg3vueBBlF5EN
+
+lang: fr
+url:
+  # notify: 'https://q8zptub5j7.execute-api.eu-west-2.amazonaws.com/dev/notify' # for dev
+  notify: 'https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify' #prod
+  redirect: '/'

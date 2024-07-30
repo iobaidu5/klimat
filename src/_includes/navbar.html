@@ -1,0 +1,64 @@
+<section class="Navbar navbar-main fixedNav">
+  <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+      <div class="container-fluid to-col">
+          <div class="Navbar_image">
+              <a href="{% link accueil.html %}" title="Accueil"><img loading="lazy" src="./assets/img/logo.png" class="Navbar_image-img" alt="Logo" /></a>
+          </div>
+          <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+          </button>
+          <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+              <ul class="navbar-nav Navbar_nav w-100">
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link {% if page.url == '/' %} Navbar_nav-link {% else %} Navbar_nav-link2 {% endif %}"
+                          title="Accueil" href="{% link accueil.html %}"> Accueil</a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item ">
+                      <a class="nav-link {% if page.url == '/' %} Navbar_nav-link {% else %} Navbar_nav-link2 {% endif %}"
+                          title="Qui sommes nous ?" href="{% link qui-sommes-nous.html %}"> Qui sommes nous ?</a>
+                  </li>
+                  <li class="nav-item dropdown Navbar_nav-item">
+                      <a class="nav-link {% if page.url == '/' %} Navbar_nav-link {% else %} Navbar_nav-link2 {% endif %} dropdown-toggle d-flex align-items-center"
+                          href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">Nos produits et services
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="py-3 dropdown-item {% if page.url == '/pompe-a-chaleur-air-eau' %} Navbar_nav-link inner-active {% else %} Navbar_nav-link2 {% endif %}"
+                              href="{% link pompe-a-chaleur-air-eau.html %}">Pompe à chaleur air/eau</a>
+                          <hr class="Navbar_nav-hr">
+                          <a class="py-3 dropdown-item {% if page.url == '/climatisation-reversible' %} Navbar_nav-link inner-active {% else %} Navbar_nav-link2 {% endif %}"
+                              href="{% link climatisation-reversible.html %}">climatisation reversible</a>
+                          <hr class="Navbar_nav-hr">
+                          <a class="py-3 dropdown-item {% if page.url == '/chauffe-eau-thermodynamique' %} Navbar_nav-link inner-active {% else %} Navbar_nav-link2 {% endif %}"
+                              href="{% link chauffe-eau-thermodynamique.html %}">chauffe-eau thermodynamique</a>
+                          <hr class="Navbar_nav-hr">
+                          <a class="py-3 dropdown-item {% if page.url == '/entretiens' %} Navbar_nav-link inner-active {% else %} Navbar_nav-link2 {% endif %}"
+                              href="{% link entretiens.html %}">Entretien SAV</a>
+                          <hr class="Navbar_nav-hr">
+                      </div>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link {% if page.url == '/galerie' %} Navbar_nav-link {% else %} Navbar_nav-link2 {% endif %}"
+                          title="Nos réalisations" href="{% link galerie.html %}"> Nos réalisations </a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link {% if page.url == '/les-aides' %} Navbar_nav-link {% else %} Navbar_nav-link2 {% endif %}"
+                          title="Les aides" href="{% link les-aides.html %}"> Les aides </a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link {% if page.url == '/' %} Navbar_nav-link {% else %} Navbar_nav-link2 {% endif %}"
+                          title="Contact" href="{% link contact.html %}"> Contact </a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link {% if page.url == '/devenir-franchise' %} Navbar_nav-link {% else %} Navbar_nav-link2 {% endif %}"
+                          title="Devenir franchisé" href="{% link devenir-franchise.html %}"> Devenir franchisé </a>
+                  </li>
+                  <li class="nav-item Navbar_nav-item">
+                      <a class="nav-link Navbar_nav-btn" title="Devis en ligne" href="{% link devis.html %}">Devis en ligne</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</section>

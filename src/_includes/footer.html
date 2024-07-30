@@ -1,0 +1,115 @@
+<footer class="footer section pb-0 bg-prim">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_logo mt-5">
+          <img loading="lazy" loading="lazy" src="../assets/img/new/logo.png" alt="" class="footer_logo-img">
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_content">
+          <ul class="footer_content-ul list-none">
+            <p class="footer_content-header">Nos produits et services</p>
+            <li class="footer_content-li mt-3">
+              <a href="{% link pompe-a-chaleur-air-eau.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/pompe-a-chaleur-air-eau' %} active-clr {% endif %}">Pompe à
+                chaleur</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="{% link climatisation-reversible.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/climatisation-reversible' %} active-clr {% endif %}">Climatisation
+                reversible</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="{% link chauffe-eau-thermodynamique.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/chauffe-eau-thermodynamique' %} active-clr {% endif %}">Chauffe-eau
+                thermodynamique</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="{% link entretiens.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/entretiens' %} active-clr {% endif %}">Entretien
+                SAV</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_content">
+          <ul class="footer_content-ul list-none">
+            <p class="footer_content-header">Autres liens</p>
+            <li class="footer_content-li mt-3">
+              <a href="{% link accueil.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/' %} active-clr {% endif %}">Accueil</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="{% link qui-sommes-nous.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/qui-sommes-nous' %} active-clr {% endif %}">Qui
+                sommes nous ?</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="{% link galerie.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/galerie' %} active-clr {% endif %}">Nos réalisations</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="{% link les-aides.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/les-aides' %} active-clr {% endif %}">Les
+                aides</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="{% link contact.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/contact' %} active-clr {% endif %}">Contact</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="{% link devenir-franchise.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/devenir-franchise' %} active-clr {% endif %}">Devenir
+                franchisé</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <a href="{% link devis.html %}"
+                class="footer_content-li--link my-0 py-0  {% if page.url == '/devis' %} active-clr {% endif %}">Devis</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 my-2">
+        <div class="footer_content">
+          <ul class="footer_content-ul list-none">
+            <p class="footer_content-header">Contactez-nous</p>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p">
+                Adresse: {{site.data.company.address}}</p>
+            </li>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p">
+                Téléphone: <a href="tel:{{site.data.company.phone}}" class="footer_content-li--link">
+                  {{site.data.company.phone}}</a></p>
+            </li>
+            <li class="footer_content-li">
+              E-mail: <a href="mailto:{{site.data.company.email}}" class="footer_content-li--link">
+                {{site.data.company.email}}</a>
+            </li>
+            <li class="footer_content-li mt-3">
+              <p class="footer_content-li--p">Nos horaires :</p>
+            </li>
+            <li class="footer_content-li">
+              <p class="footer_content-li--p">Du lundi au vendredi : 9H00 - 21H00</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer_bottom d-flex justify-content-center mx-auto py-5 w-100 bg-prim">
+  <div class="">
+    <a href="https://www.bhinternet.fr/" target="_blank"
+      class="footer_content-li--link text-black my-0 text-center w-100">BHInternet - Création site internet
+      entreprise  | 2023 | </a><a href="" class="footer_content-li--link text-black my-0 text-center w-100">
+      Mentions légales</a>
+  </div>
+</div>
+
+
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

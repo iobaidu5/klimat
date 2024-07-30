@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body>
+
+    {% if page.url == '/' %}
+        {% include navbar.html %}
+        {% include slider.html %}
+    {% else %}
+        {% include navbar-2.html %}
+    {% endif %}
+
+    <div class="">
+        {{ content }}
+    </div>
+
+    <div class="fixphone">
+      <div class="Navbar_nav-image d-flex justify-content-center flex-column mx-auto w-100 mt-0 mb-5 pb-5">
+        <img loading="lazy" src="../assets/img/new/decenalle.png" alt="decenalle" class="Navbar_nav-image--img2 my-3">
+        <img loading="lazy" src="../assets/img/new/rge.png" alt="RGE" class="Navbar_nav-image--img2 my-3">
+    </div>
+      <div>
+        <a href="tel:{{ site.data.company.phone}}" title="{{ site.data.company.phone}}" class="button one phoneone"><i class="fas fa-phone-alt"></i> &nbsp;{{ site.data.company.phone }}</a>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

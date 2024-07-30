@@ -1,0 +1,88 @@
+<section class="section menu pt-5 mt-3">
+  <div class="container-fluid">
+    <div class="menu_content mb-5 pb-5">
+      <h2 class="menu_content-title text-center">Contactez-nous</h2>
+      <p class="menu_content-header text-black text-center">Question ou suggestion ? Contactez-nous dès maintenant pour toute demande.</p>
+  </div>
+      <div class="row align-items-center mt-5">
+        <div class="col-md-6">
+          <div class="menu_image m-l-2">
+            <img loading="lazy" src="../assets/img/new/klimat-contact.png" alt="" class="menu_image-img2">
+          </div>
+        </div>
+          <div class="col-md-6">
+              <div class="contact_form">
+                  <form class="form" method="post" id="contactForm" action="{{ site.data.company.url.notify }}">
+                      <input type="hidden" name="lang" value="fr">
+                      <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                      <input type="hidden" name="type" value="contact" />
+                      <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+                      <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+                      <input type="hidden" name="firstName" value="" />
+                      <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="name" class="contact_form-label">Nom</label>
+                                  <input type="text" class="contact_form-input" id="name" name="name"
+                                      placeholder="Votre nom*" required>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="phone" class="contact_form-label">Téléphone</label>
+                                <input type="number" class="contact_form-input" id="phone" name="phone"
+                                    placeholder="Téléphone*" required>
+                            </div>
+                        </div>
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="email" class="contact_form-label">Mail</label>
+                                  <input type="email" class="contact_form-input" id="email" name="email"
+                                      aria-describedby="emailHelp" placeholder="@gmail.fr*" required>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="Je suis un" class="contact_form-label">Je suis un</label>
+                                <select class="contact_form-input" id="je-suis-un" name="je-suis-un">
+                                  <option value="particulier">Particulier</option>
+                                  <option value="professionnel">Professionnel</option>
+                                </select>
+                            </div>
+                        </div>
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="message" class="contact_form-label">Commentaire</label>
+                                  <textarea type="text" class="contact_form-input h-100" id="message" name="message"
+                                      placeholder="message..." rows="5" required></textarea>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+                          </div>
+                          <br />
+                          <div id="contact-form-response" class="text-white" style="color: #000 !important; font-size: 1rem;">
+                          </div>
+                          <input style="display: none" type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+                      </div>
+                      <div class="checkbox d-flex mt-4">
+                          <input name="condition" type="checkbox" style="height: 2rem; width: 2rem; vertical-align: middle;"
+                              class="check" />
+                          <span class="contact_space-form--label text"
+                              style="color: #000 !important; margin-left: 1rem; font-size: 1.3rem;">&nbsp;En utilisant ce
+                              formulaire, vous acceptez le stockage et la gestion de vos données par ce site *</span>
+                      </div>
+                      <p id="checkboxError" class="error"></p>
+                      <p class="contact_form-label text-left">(*): Champs obligatoires</p>
+                      <div class="d-flex flex-column align-items-center justify-content-center mt-4">
+                          <button type="submit" class="button form-submit contact_form-button">ENVOYER</button>
+                          <p class="contact_form-label text-left">Si vous souhaitez devenir franchisé, <a href="{% link devenir-franchise.html %}" class="link">cliquez ici</a></p>
+                        </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
